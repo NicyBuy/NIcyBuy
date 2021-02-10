@@ -1,0 +1,33 @@
+.slider{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    box-sizing: border-box;
+    border-image: fill;
+    object-fit: scale-down;
+}
+
+.sliderItem_boton{
+    position: absolute;
+    height: 40px;
+    width: 70px;
+    top: 50%;
+    background: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.sliderItem_boton:hover, .sliderItem_boton:active{
+    cursor: pointer;
+}
+
+.sliderItem_prev{
+    left: 0;
+}
+
+.sliderItem_next{
+    right: 0;
+}

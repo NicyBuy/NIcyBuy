@@ -1,0 +1,22 @@
+$color1: blue;
+$color2: green;
+$color3: purple;
+
+//noramlize
+@import '../node_modules/normalize.css/normalize.css';
+
+//index
+@import './index/skeleton';
+
+//navbar
+@import './navbar/skeleton';
+
+//thefooter
+@import './thefooter/skeleton';
+
+//slider
+@import './slider/skeleton';
+
+//sliderItem
+@import './sliderItem/skeleton';
+

@@ -1,0 +1,75 @@
+
+.container{
+    background-color: $color3;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_slider{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    
+    overflow: hidden;
+    object-fit: scale-down;
+    box-sizing: content-box;
+}
+
+.slider_imgs{
+    object-fit: contain;
+    overflow: hidden;
+    border: 2px solid $color3;
+    width: 300px;
+    height: 300px;
+}
+
+//--------- slider 2
+body {
+    margin: 0;
+  }
+  .carousel {
+    width: 100vw;
+    height: 100vh;
+    background: blue;
+    position: relative;
+    overflow: hidden;
+    
+    
+  }
+  .carousel .tracker {
+    width: 900%;
+    position: absolute;
+    top: 150px;
+    left: 20px;
+    display: inline-flex;
+    touch-action: none;
+    scroll-snap-type: x mandatory;
+  }
+
+.tracker--smooth--true{
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+  
+  .carousel .tracker .card {
+    width: 80%;
+    height: 300px;
+    background: #fff;
+    border-radius: 3px;
+    //margin-right: 20px;
+    scroll-snap-align: right;
+  }
+    
+  .slider2_img{
+      width: 100%;
+      height: 100%;
+      user-select: none;
+      
+  }
