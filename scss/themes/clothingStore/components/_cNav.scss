@@ -1,5 +1,49 @@
 nav {
     width: 100%;
     height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background: $clothingStore__turquoise1;
+
+    .contNav{
+        width: 90%;
+        height: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .contNav__logo{
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background: white;
+            visibility: hidden;
+        }
+
+        .contNav__button{
+            width: 50px;
+            height: 40px;
+            border: none;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .contNav__button-line{
+                width: 100%;
+                height: 8px;
+                background: white;
+
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+
+        }
+
+        
+
+    }
+
 }
