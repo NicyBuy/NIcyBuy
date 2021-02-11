@@ -28,7 +28,10 @@
 </template>
 
 <script>
-export default {}
+export default {
+
+  layout: "themes/clothingStore/home"
+}
 </script>
 
 <style>
