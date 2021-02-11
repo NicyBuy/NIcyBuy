@@ -2,8 +2,14 @@ $color1: blue;
 $color2: green;
 $color3: purple;
 
+$color4: #8B48E6;
+$color5: #F6F6F6;
+
 //noramlize
 @import '../node_modules/normalize.css/normalize.css';
+
+//deafult
+@import './default/skeleton';
 
 //index
 @import './index/skeleton';
@@ -19,4 +25,10 @@ $color3: purple;
 
 //sliderItem
 @import './sliderItem/skeleton';
+
+//conenedero de productos
+@import './ContProductos/skeleton';
+
+//sliderItem
+@import './Producto/skeleton';
 
