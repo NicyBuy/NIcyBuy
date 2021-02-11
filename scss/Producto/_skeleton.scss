@@ -2,8 +2,9 @@
     
     position: relative;
     width: 40%;
+    max-width: 160px;
     height: 250px;
-    margin: 20px 0;
+    margin: 20px 10px;
     overflow: hidden;
     box-shadow: 2px 2px 9px 0px rgba(0,0,0,0.6);
     border-radius: 8px;
@@ -27,6 +28,7 @@
     height: 30%;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 
 .productEspecific_info_price{
