@@ -48,18 +48,14 @@
 </template>
 
 <script>
-<<<<<<< HEAD
-export default {
 
-  layout: "themes/clothingStore/home"
-}
-</script>
-=======
 import ContProductos from "../components/ContProductos.vue";
 import { mapMutations } from "vuex";
->>>>>>> 92e9574316cca38cd66bbf1a9da4b91f95d91433
 
 export default {
+
+  // layout: "themes/clothingStore/home",
+
   components: { ContProductos },
   data() {
     return {};

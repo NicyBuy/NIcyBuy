@@ -48,9 +48,10 @@ export default {
   components: { cProduct },
 
   data(){
-      return {
-          img1: img1,
-      }
+    return{
+      img1: img1,
+    }
+    
   }
 
 }
