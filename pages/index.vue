@@ -59,10 +59,14 @@
 </template>
 
 <script>
+
 import ContProductos from "../components/ContProductos.vue";
 import { mapState, mapMutations } from "vuex";
 
 export default {
+
+  // layout: "themes/clothingStore/home",
+
   components: { ContProductos },
   data() {
     return {
