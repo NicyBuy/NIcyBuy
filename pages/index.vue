@@ -1,76 +1,78 @@
 <template>
   <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        NicyBuy
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+    <div class="index_baner">
+      <img
+        class="index_baner_img"
+        src="https://www.yaconic.com/wp-content/uploads/2020/02/kitten-2288404_1920-1024x683.jpg"
+        alt=""
+      />
+    </div>
+
+    <div style="height: 150px; overflow: hidden; width: 100%">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M-15.12,123.65 C377.65,163.13 495.60,100.95 511.96,147.32 L558.80,194.70 L0.00,150.00 Z"
+          style="stroke: none; fill: #8b48e6"
+        ></path>
+      </svg>
+    </div>
+
+    <div class="index_slider">slider</div>
+
+    <div style="height: 100px; overflow: hidden; width: 100%;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-30.92,97.99 C329.11,-105.29 437.47,218.39 505.19,20.02 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #8B48E6; height: 200%;"></path></svg></div>
+
+    <div class="index_categorys">
+      <h2 class="index_categorys_title">CATEGORIAS</h2>
+      <div class="indez_category_content">
+        <div class="index_category_item">Nombre</div>
+        <div class="index_category_item">Nombre</div>
+        <div class="index_category_item">Nombre</div>
+        <div class="index_category_item">Nombre</div>
+        <div class="index_category_item">Nombre</div>
+        <div class="index_category_item">Nombre</div>
+        <div class="index_category_item">Nombre</div>
+        <div class="index_category_item">Nombre</div>
       </div>
+    </div>
+
+    <div class="index_maylike">
+      <h2 class="index_maylike_title">Puede que te guste</h2>
+      <cont-productos />
+      <p @click="seeMore" class="index_seeMore">ver mas</p>
     </div>
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 export default {
 
   layout: "themes/clothingStore/home"
 }
 </script>
+=======
+import ContProductos from "../components/ContProductos.vue";
+import { mapMutations } from "vuex";
+>>>>>>> 92e9574316cca38cd66bbf1a9da4b91f95d91433
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+export default {
+  components: { ContProductos },
+  data() {
+    return {};
+  },
+  methods: {
+    ...mapMutations({
+      seeMore: "products/moreProds",
+    }),
+  },
+  mounted() {
+    //this.getCommetns();
+  },
+};
+</script>
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

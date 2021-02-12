@@ -1,0 +1,49 @@
+.sliderItem{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    border-image: fill;
+    object-fit: scale-down;
+}
+
+.left-enter-active{
+    animation: leftInAnimation 0.4s ease-in;
+    -webkit-animation: leftInAnimation 0.4s ease-in;
+}
+.left-leave-active{
+    animation: leftOutAnimation 0.4s ease-in;
+    -webkit-animation: leftOutAnimation 0.4s ease-in;
+}
+@keyframes leftInAnimation{
+    from{ transform:translateX(100%) ; -webkit-transform:translateX(100%) ; -moz-transform:translateX(100%) ; -ms-transform:translateX(100%) ; -o-transform:translateX(100%) ; }
+    to{ transform: translateX(0); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); }
+}
+@keyframes leftOutAnimation{
+    from{ transform:translateX(0) ; -webkit-transform:translateX(0) ; -moz-transform:translateX(0) ; -ms-transform:translateX(0) ; -o-transform:translateX(0) ; }
+    to{ transform: translateX(-100%); -webkit-transform: translateX(-100%); -moz-transform: translateX(-100%); -ms-transform: translateX(-100%); -o-transform: translateX(-100%); }
+}
+
+
+
+
+.right-enter-active{
+    animation: rightInAnimation 0.4s ease-in;
+    -webkit-animation: rightInAnimation 0.4s ease-in;
+}
+.right-leave-active{
+    animation: rightOutAnimation 0.4s ease-in;
+    -webkit-animation: rightOutAnimation 0.4s ease-in;
+}
+@keyframes rightInAnimation{
+    from{ transform:translateX(-100%) ; -webkit-transform:translateX(-100%) ; -moz-transform:translateX(-100%) ; -ms-transform:translateX(-100%) ; -o-transform:translateX(-100%) ; }
+    to{ transform: translateX(0); -webkit-transform: translateX(0); -moz-transform: translateX(0); -ms-transform: translateX(0); -o-transform: translateX(0); }
+}
+@keyframes rightOutAnimation{
+    from{ transform:translateX(0) ; -webkit-transform:translateX(0) ; -moz-transform:translateX(0) ; -ms-transform:translateX(0) ; -o-transform:translateX(0) ; }
+    to{ transform: translateX(100%); -webkit-transform: translateX(100%); -moz-transform: translateX(100%); -ms-transform: translateX(100%); -o-transform: translateX(100%); }
+}

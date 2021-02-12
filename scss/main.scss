@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //THEMES //=============================
 
 //clothingStore //-----------------------
@@ -16,4 +17,39 @@
 
 //---------------------------------------
 
+=======
+$color1: blue;
+$color2: green;
+$color3: purple;
+
+$color4: #8B48E6;
+$color5: #F6F6F6;
+
+//noramlize
+@import '../node_modules/normalize.css/normalize.css';
+
+//deafult
+@import './default/skeleton';
+
+//index
+@import './index/skeleton';
+
+//navbar
+@import './navbar/skeleton';
+
+//thefooter
+@import './thefooter/skeleton';
+
+//slider
+@import './slider/skeleton';
+
+//sliderItem
+@import './sliderItem/skeleton';
+
+//conenedero de productos
+@import './ContProductos/skeleton';
+
+//sliderItem
+@import './Producto/skeleton';
+>>>>>>> 92e9574316cca38cd66bbf1a9da4b91f95d91433
 
