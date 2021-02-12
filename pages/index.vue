@@ -23,7 +23,18 @@
 
     <div class="index_slider">slider</div>
 
-    <div style="height: 100px; overflow: hidden; width: 100%;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-30.92,97.99 C329.11,-105.29 437.47,218.39 505.19,20.02 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #8B48E6; height: 200%;"></path></svg></div>
+    <div style="height: 100px; overflow: hidden; width: 100%">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M-30.92,97.99 C329.11,-105.29 437.47,218.39 505.19,20.02 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: #8b48e6; height: 200%"
+        ></path>
+      </svg>
+    </div>
 
     <div class="index_categorys">
       <h2 class="index_categorys_title">CATEGORIAS</h2>
@@ -42,19 +53,27 @@
     <div class="index_maylike">
       <h2 class="index_maylike_title">Puede que te guste</h2>
       <cont-productos />
-      <p @click="seeMore" class="index_seeMore">ver mas</p>
+      
     </div>
   </div>
 </template>
 
 <script>
 import ContProductos from "../components/ContProductos.vue";
-import { mapMutations } from "vuex";
+import { mapState, mapMutations } from "vuex";
 
 export default {
   components: { ContProductos },
   data() {
-    return {};
+    return {
+
+    };
+  },
+  computed: {
+    ...mapState({
+      allproductsStore: (state) => state.products.products,
+      fewProds: (state) => state.products.fewProds,
+    }),
   },
   methods: {
     ...mapMutations({

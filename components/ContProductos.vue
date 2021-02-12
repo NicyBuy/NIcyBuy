@@ -1,12 +1,15 @@
 <template >
   <div class="contProduct">
-    <producto
-      :nombre="fewProds[index].title"
-      :precio="fewProds[index].price"
-      v-for="(num, index) in fewProds"
-      :key="index"
-    ></producto>
-    
+    <div @click="filterPrice2">filtra</div>
+    <div class="contProducs_content">
+      <producto
+        :nombre="fewProds2[index].title"
+        :precio="fewProds2[index].price"
+        v-for="(num, index) in fewProds2"
+        :key="index"
+      ></producto>
+    </div>
+    <p @click="moreProds2" class="index_seeMore">ver mas</p>
   </div>
 </template>
 <script>
@@ -15,9 +18,15 @@ import { mapState, mapActions, mapMutations } from "vuex";
 
 export default {
   components: { Producto },
+  data() {
+    return {
+      indexParcialComments: 0,
+      fewProds2: [],
+    };
+  },
   computed: {
     ...mapState({
-      allproducts: (state) => state.products.products,
+      allproductsStore: (state) => state.products.products,
       fewProds: (state) => state.products.fewProds,
     }),
   },
@@ -31,6 +40,9 @@ export default {
   },
   created() {
     this.getpro(); //console.log($context.app.data[0]);
+  },
+  mounted() {
+    //this.allproducts = this.allproductsStore;
   },
 };
 </script>
