@@ -1,15 +1,15 @@
 <template >
   <div class="contProduct">
-    <div @click="filterPrice2">filtra</div>
+    <div @click="filter1" >filtra</div>
     <div class="contProducs_content">
       <producto
-        :nombre="fewProds2[index].title"
-        :precio="fewProds2[index].price"
-        v-for="(num, index) in fewProds2"
+        :nombre="fewProds[index].title"
+        :precio="fewProds[index].price"
+        v-for="(num, index) in fewProds"
         :key="index"
       ></producto>
     </div>
-    <p @click="moreProds2" class="index_seeMore">ver mas</p>
+    <p @click="seeMore" class="index_seeMore">ver mas</p>
   </div>
 </template>
 <script>
@@ -20,8 +20,6 @@ export default {
   components: { Producto },
   data() {
     return {
-      indexParcialComments: 0,
-      fewProds2: [],
     };
   },
   computed: {
@@ -35,6 +33,7 @@ export default {
       getpro: "products/getProducts",
       ...mapMutations({
         seeMore: "products/moreProds",
+        filter1: "products/filter1",
       }),
     }),
   },
