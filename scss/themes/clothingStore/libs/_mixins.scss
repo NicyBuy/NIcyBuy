@@ -21,13 +21,13 @@ height: 10vh;
 }
 
 @mixin Title($position, $color) {
-
     width: 90%;
     display: flex;
     justify-content: $position;
     height: 65px;
     align-items: center;
     font-size: $clothingStore__Title;
+    font-family: $clothingStore__font-family;
     font-weight: 700;
     color: $color;
 }

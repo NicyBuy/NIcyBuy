@@ -1,4 +1,4 @@
-.contProducts{
+.Recomended{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -6,7 +6,11 @@
     margin-top: 30px;
     margin-bottom: 30px;
 
-    .Products{
+    .Title{
+        @include Title(center,$clothingStore1);
+    }
+
+    .Recomended__Products{
         width: 100%;
         display: flex;
         justify-content: center;
