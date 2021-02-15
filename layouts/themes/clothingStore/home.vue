@@ -4,7 +4,7 @@
   <div class="nav-space"></div>
 
 
-  <div class="clothingStore__main">
+  <main class="clothingStore__main">
     <div class="contImg">
       <img :src="Banner" alt="">
     </div>
@@ -45,7 +45,7 @@
 
     <contProducts />
     
-  </div>
+  </main>
   <cFooter/>
 </div>
 </template>
