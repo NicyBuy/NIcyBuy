@@ -22,7 +22,7 @@
   .Featured {
     width: 100%;
     height: 45vh;
-    background: $clothingStore__turquoise2;
+    background: $clothingStore2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -46,7 +46,7 @@
     align-items: center;
 
     .Title {
-      @include Title(center, $clothingStore__turquoise1);
+      @include Title(center, $clothingStore1);
     }
 
     .contCategories {
@@ -74,7 +74,7 @@
     align-items: center;
 
     .Title {
-      @include Title(center, $clothingStore__turquoise1);
+      @include Title(center, $clothingStore1);
     }
 
     .contSizes {
@@ -88,10 +88,10 @@
         margin: 7px;
         border-radius: 100%;
         background: white;
-        border: solid $clothingStore__turquoise1 3px;
+        border: solid $clothingStore1 3px;
         font-size: 20px;
         font-weight: 700;
-        color: $clothingStore__turquoise1;
+        color: $clothingStore1;
 
       }
     }
