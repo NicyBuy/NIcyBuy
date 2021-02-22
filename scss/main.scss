@@ -2,6 +2,7 @@
 @import "libs/gmixins";
 @import "libs/gvars";
 
+//===================================
 
 //THEMES //=============================
 
@@ -18,10 +19,30 @@
 @import "themes/clothingStore/components/cNav";
 @import "themes/clothingStore/components/cFooter";
 @import "themes/clothingStore/components/cProduct";
-@import "themes/clothingStore/components/cSN";
 @import "themes/clothingStore//components/contProducts";
 @import "themes/clothingStore/components/recomended";
-//---------------------------------------
+
+//------------------------------------------------------
+
+//=========================================
+
+//foodStore // ------------------------------
+//libs
+@import "themes/foodStore/libs/vars";
+@import "themes/foodStore/libs/mixins";
+
+//pages
+@import "themes/foodStore/pages/home";
+@import "themes/foodStore/pages/productView";
+
+//components
+@import "themes/foodStore/components/cFeaturedProduct";
+@import "themes/foodStore/components/cFooter";
+@import "themes/foodStore/components/cNav";
+@import "themes/foodStore/components/contProducts";
+@import "themes/foodStore/components/cProduct";
+
+//--------------------------------------------
 
 $color1: blue;
 $color2: green;

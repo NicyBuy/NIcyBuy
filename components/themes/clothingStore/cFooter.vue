@@ -55,6 +55,5 @@ export default {
 }
 </script>
 
-<style lang = "scss" src = "../../../scss/main.scss">
+<style lang = "scss" src = "../../../scss/main.scss"></style>
 
-</style>

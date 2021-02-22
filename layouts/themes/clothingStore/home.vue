@@ -54,7 +54,6 @@
 import cFooter from '../../../components/themes/clothingStore/cFooter.vue';
 import cNav from '../../../components/themes/clothingStore/cNav.vue';
 import cProduct from '../../../components/themes/clothingStore/cProduct.vue';
-import cSN from '../../../components/themes/clothingStore/cSN.vue';
 import contProducts from '../../../components/themes/clothingStore/contProducts.vue';
 import Banner from '../../../assets/Stores/ThriftyShop/img/Logo.jpeg';
 
@@ -63,7 +62,6 @@ export default {
     cFooter,
     cNav,
     cProduct,
-    cSN,
     contProducts,
   },
 
