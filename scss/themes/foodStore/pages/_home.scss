@@ -1,0 +1,7 @@
+.foodStore__Cover{
+    @include ContImg(30vh, 100%);
+
+    img{
+        @include img();
+    }
+}
