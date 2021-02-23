@@ -65,7 +65,7 @@ import { mapState, mapMutations } from "vuex";
 
 export default {
 
-  layout: "themes/clothingStore/productView",
+  layout: "themes/foodStore/home",
 
   components: { ContProductos },
   data() {
