@@ -8,19 +8,20 @@
 
 //clothingStore //-----------------------
 //libs
-@import "themes/clothingStore/libs/vars";
-@import "themes/clothingStore/libs/mixins";
+@import "../themes/ClothingStore/scss/libs/mixins";
+@import "../themes/ClothingStore/scss/libs/vars";
 
 //pages
-@import "themes/clothingStore/pages/home";
-@import "themes/clothingStore/pages/productView";
+@import "../themes/ClothingStore/scss/pages/home";
+@import "../themes/ClothingStore/scss/pages/productView";
 
 //components
-@import "themes/clothingStore/components/cNav";
-@import "themes/clothingStore/components/cFooter";
-@import "themes/clothingStore/components/cProduct";
-@import "themes/clothingStore//components/contProducts";
-@import "themes/clothingStore/components/recomended";
+@import "../themes/ClothingStore/scss/components/cFooter";
+@import "../themes/ClothingStore/scss/components/cNav";
+@import "../themes/ClothingStore/scss/components/contProducts";
+@import "../themes/ClothingStore/scss/components/cProduct";
+@import "../themes/ClothingStore/scss/components/recomended";
+
 
 //------------------------------------------------------
 
@@ -28,19 +29,19 @@
 
 //foodStore // ------------------------------
 //libs
-@import "themes/foodStore/libs/vars";
-@import "themes/foodStore/libs/mixins";
+@import "../themes/FoodStore/scss/libs/mixins";
+@import "../themes/FoodStore/scss/libs/vars";
 
 //pages
-@import "themes/foodStore/pages/home";
-@import "themes/foodStore/pages/productView";
+@import "../themes/FoodStore/scss/pages/home";
+@import "../themes/FoodStore/scss/pages/productView";
 
 //components
-@import "themes/foodStore/components/cFeaturedProduct";
-@import "themes/foodStore/components/cFooter";
-@import "themes/foodStore/components/cNav";
-@import "themes/foodStore/components/contProducts";
-@import "themes/foodStore/components/cProduct";
+@import "../themes/FoodStore/scss/components/cFeaturedProduct";
+@import "../themes/FoodStore/scss/components/cFooter";
+@import "../themes/FoodStore/scss/components/cNav";
+@import "../themes/FoodStore/scss/components/contProducts";
+@import "../themes/FoodStore/scss/components/cProduct";
 
 //--------------------------------------------
 

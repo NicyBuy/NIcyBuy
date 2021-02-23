@@ -11,10 +11,10 @@
 
 <script>
 //components
-import cNav from '../../../components/themes/foodStore/cNav.vue'
+import cNav from '../../../themes/FoodStore/components/cNav';
 
 //img
-import Cover from '../../../assets/Stores/foodStore/img/Logo.jpg'
+import Cover from '../../../themes/FoodStore/assets/img/Logo.jpg';
 
 export default {
     components: {

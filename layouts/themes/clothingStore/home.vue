@@ -51,10 +51,10 @@
 </template>
 
 <script>
-import cFooter from '../../../components/themes/clothingStore/cFooter.vue';
-import cNav from '../../../components/themes/clothingStore/cNav.vue';
-import cProduct from '../../../components/themes/clothingStore/cProduct.vue';
-import contProducts from '../../../components/themes/clothingStore/contProducts.vue';
+import cFooter from '../../../themes/ClothingStore/components/cFooter.vue';
+import cNav from '../../../themes/ClothingStore/components/cNav.vue';
+import cProduct from '../../../themes/ClothingStore/components/cProduct.vue';
+import contProducts from '../../../themes/ClothingStore/components/contProducts';
 import Banner from '../../../assets/Stores/ThriftyShop/img/Logo.jpeg';
 
 export default {

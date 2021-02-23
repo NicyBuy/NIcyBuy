@@ -42,9 +42,9 @@
 </template>
 
 <script>
-import cNav from '../../../components/themes/clothingStore/cNav.vue'
+import cNav from '../../../themes/ClothingStore/components/cNav.vue';
 import product from '../../../assets/Stores/ThriftyShop/products/2.jpg';
-import CRecomended from '../../../components/themes/clothingStore/cRecomended.vue';
+import CRecomended from '../../../themes/ClothingStore/components/cRecomended';
 export default {
   components: { cNav, CRecomended, },
 
