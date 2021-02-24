@@ -6,6 +6,14 @@
       <img :src="Cover" alt="">
     </div>
 
+    <div class="--white-space"></div>
+    <div class="--white-space"></div>
+    <div class="-white-space"></div>
+    <div class="-white-space"></div>
+    <div class="-white-space"></div>
+    <div class="-white-space"></div>
+    <div class="-white-space"></div>
+
     <div class="foodStore__cont-featured">
         <div class="--white-space"></div>
         <div class="foodStore__featured">
@@ -31,6 +39,9 @@
              <button>CATEGORY</button>
             <button>CATEGORY</button>
         </div>
+        <div class="--white-space"></div>
+
+        <c-cont-products/>
     </div>
 
 
@@ -45,10 +56,12 @@
 import cNav from '../../../themes/FoodStore/components/cNav';
 //img
 import Cover from '../../../themes/FoodStore/assets/img/Logo.jpg';
+import CContProducts from '../../../themes/FoodStore/components/cContProducts.vue';
 
 export default {
     components: {
-        cNav
+        cNav,
+        CContProducts
     },
 
     data(){

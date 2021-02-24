@@ -2,9 +2,10 @@
     background: $foodStoreBG;
   .foodStore__Cover {
     @include ContImg(70vh, 100%);
+    position: fixed;
 
     @media screen and (max-width: 700px) {
-      height: 30vh;
+      height: 32vh;
     }
 
     img {
@@ -45,7 +46,7 @@
       flex-direction: column;
 
       .foodStore__categories{
-          width: 95%;
+        width: 345px;
           display: flex;
           flex-wrap: wrap;
           button{
