@@ -5,7 +5,7 @@
   align-items: center;
   font-family: $clothingStore__font-family;
   background: $clothingStoreBG;
-
+//agregar nav space al componente de nav de un solo
   .nav-space {
     @include nav-space();
   }
@@ -103,10 +103,8 @@
   @include nav-space();
 }
 
-.white-space {
-  @include white-space();
-}
 
+//revisar este white space
 .-white-space {
   @include white-space();
 }

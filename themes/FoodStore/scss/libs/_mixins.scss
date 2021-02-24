@@ -1,0 +1,11 @@
+@mixin foodStore__Title($width, $position, $color) {
+    width: $width;
+    display: flex;
+    justify-content: $position;
+    height: 65px;
+    align-items: center;
+    font-size: $foodStore__Title;
+    font-family: $foodStore__font-family;
+    font-weight: 700;
+    color: $color;
+  }
