@@ -1,6 +1,7 @@
 .foodStore__Product{
     width: 330px;
     height: 200px;
+    margin: 10px;
     background: white;
     border-radius: 10px;
     @include Shadow();

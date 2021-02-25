@@ -5,6 +5,7 @@
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    background: $foodStoreBG;
 
     .foodStore__Products{
         width: 100%;
@@ -25,7 +26,7 @@
             border: none;
             font-size: 20px;
             font-weight: 700;
-            font-family: $clothingStore__font-family;
+            font-family: $foodStore__font-family;
             color: $foodStore1;
             cursor: pointer;
         }

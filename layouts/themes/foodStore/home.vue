@@ -1,18 +1,11 @@
 <template>
 <div class="home">
   <cNav />
+   
   <div class="foodStore__main">
     <div class="foodStore__Cover">
       <img :src="Cover" alt="">
     </div>
-
-    <div class="--white-space"></div>
-    <div class="--white-space"></div>
-    <div class="-white-space"></div>
-    <div class="-white-space"></div>
-    <div class="-white-space"></div>
-    <div class="-white-space"></div>
-    <div class="-white-space"></div>
 
     <div class="foodStore__cont-featured">
         <div class="--white-space"></div>
@@ -39,13 +32,11 @@
              <button>CATEGORY</button>
             <button>CATEGORY</button>
         </div>
-        <div class="--white-space"></div>
-
-        <c-cont-products/>
     </div>
-
-
+    <c-cont-products/>
+    <cFooter/>
   </div>
+
 </div>
 
  
@@ -57,11 +48,13 @@ import cNav from '../../../themes/FoodStore/components/cNav';
 //img
 import Cover from '../../../themes/FoodStore/assets/img/Logo.jpg';
 import CContProducts from '../../../themes/FoodStore/components/cContProducts.vue';
+import cFooter from '../../../themes/FoodStore/components/cFooter.vue';
 
 export default {
     components: {
         cNav,
-        CContProducts
+        CContProducts,
+        cFooter
     },
 
     data(){

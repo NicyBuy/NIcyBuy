@@ -1,8 +1,8 @@
 .foodStore__main {
     background: $foodStoreBG;
+    
   .foodStore__Cover {
     @include ContImg(70vh, 100%);
-    position: fixed;
 
     @media screen and (max-width: 700px) {
       height: 32vh;
@@ -15,7 +15,6 @@
 
   .foodStore__cont-featured {
     width: 100%;
-    height: 400px;
     background: $foodStoreBG;
     display: flex;
     flex-direction: column;
@@ -27,9 +26,6 @@
     .foodStore__featured {
       width: 100%;
       height: 100%;
-
-      
-
       .foodStore__featured-products{
           width: 100%;
           height: 250px;
@@ -40,7 +36,6 @@
 
   .foodStore__cont-categories{
       width: 100%;
-      height: 300px;
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -71,5 +66,7 @@
     @include foodStore__Title(100%, center, $foodStore1);
   }
 }
+
+
 
 
