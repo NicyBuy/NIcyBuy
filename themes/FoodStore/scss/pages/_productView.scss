@@ -1,0 +1,72 @@
+.foodStore__main {
+  background: $foodStoreBG;
+
+  .foodStore__pV-contCover {
+    width: 100%;
+    height: 32vh;
+    display: grid;
+    grid: 100% / 100%;
+
+    .foodStore__pV-cover {
+      grid-area: 1/1/2/2;
+      @include ContImg(100%, 100%);
+
+      img {
+        @include img();
+      }
+    }
+
+    button {
+      width: 100%;
+      height: 100%;
+      grid-area: 1/1/2/2;
+      background: rgba(0, 0, 0, 0.329);
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+
+  .foodStore__pV-contInfo {
+    width: 100%;
+    background: $foodStoreBG;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px 25px 0px 0px;
+    transform: translateY(-15px);
+
+
+    .foodStore__pV-title {
+      width: 90%;
+      font-size: $foodStore__Sub-title;
+      font-weight: bold;
+      display: flex;
+      justify-content: center;
+    }
+
+    .foodStore__pV-description {
+      width: 90%;
+      font-size: $foodStore__regular;
+      display: flex;
+      justify-content: center;
+    }
+
+    .foodStore__pV-contImageView {
+      width: 90%;
+
+      .foodStore__pV-imageView {
+        @include ContImg(80px, 80px);
+        border-radius: 9px;
+
+        img {
+          @include img();
+        }
+      }
+    }
+
+  }
+
+
+}

@@ -63,7 +63,7 @@
   }
 
   .foodStore__title {
-    @include foodStore__Title(100%, center, $foodStore1);
+    @include foodStore__Title(100%, center, $foodStore1,$foodStore__Title);
   }
 }
 
