@@ -8,6 +8,7 @@
               <div class="line2"></div>
           </div>
       </button>
+      <div class="foodStore__nav-space"></div>
     </div>
   </div>
 </template>
