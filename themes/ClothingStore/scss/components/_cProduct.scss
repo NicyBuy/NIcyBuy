@@ -1,43 +1,39 @@
-.clothingStore__Product{
-    width: 160px;
-    height: 250px;
-    margin: 10px 7px;
-    background: white;
-    @include Shadow();
+.clothingStore__Product {
+  width: 160px;
+  height: 250px;
+  margin: 10px 7px;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include Shadow();
 
+  .contImg {
+    @include ContImg(60%, 100%);
+
+    img {
+      @include img();
+    }
+  }
+
+  .name {
+    width: 100%;
+    height: 17%;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
+    padding: 5px;
+    font-size: 15px;
+  }
+
+  .price {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: flex-end;
     align-items: center;
-
-    .contImg{
-        @include ContImg(60%, 100%);
-        
-        img{
-            @include img();
-        }
-    }
-
-    .name{
-        width: 100%;
-        height: 17%;
-        overflow: hidden;
-        display: flex;
-        padding: 5px;
-        font-size: 15px;
-    }
-
-    .price{
-        width: 100%;
-        height: 20%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-right: 7px;
-        font-size: 18px;
-        font-weight: 700;
-        color: $clothingStore3;
-        
-    }
-
-
+    padding-right: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    color: $clothingStore3;
+  }
 }

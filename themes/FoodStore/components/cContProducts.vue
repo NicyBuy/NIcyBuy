@@ -13,19 +13,22 @@
 </template>
 
 <script>
+//components
 import cProduct from './cProduct.vue';
+
+//img
 import img from '../assets/products/4.jpg';
+
 export default {
-  components: { cProduct },
+  components: {
+    cProduct
+  },
 
-  data(){
-      return{
-          img: img
-      }
+  data() {
+    return {
+      img: img
+    }
   }
-
-
-
 }
 </script>
 

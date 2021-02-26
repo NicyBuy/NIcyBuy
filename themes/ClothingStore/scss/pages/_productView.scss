@@ -7,7 +7,6 @@
     img {
       @include img();
     }
-
   }
 
   main {
@@ -46,51 +45,50 @@
         color: white;
         font-size: 18px;
         overflow: hidden;
+
         span {
           font-size: 20px;
           font-weight: 700;
         }
       }
 
-      .contPreview{
-          width: 90%;
-          height: 30%;
-          
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+      .contPreview {
+        width: 90%;
+        height: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-          .preview{
-              height: 75px;
-              width: 75px;
-              background: white;
-          }
+        .preview {
+          height: 75px;
+          width: 75px;
+          background: white;
+        }
       }
 
-      .contPrice{
-          width: 90%;
-          height: 20%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
+      .contPrice {
+        width: 90%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-          .price{
-              color: white;
-              font-size: 30px;
-              font-weight: 700;
-          }
+        .price {
+          color: white;
+          font-size: 30px;
+          font-weight: 700;
+        }
 
-          button{
-              width: 120px;
-              color: white;
-              font-weight: 700;
-              background: none;
-              border: none;
-              font-size: 20px;
-              cursor: pointer;
-          }
+        button {
+          width: 120px;
+          color: white;
+          font-weight: 700;
+          background: none;
+          border: none;
+          font-size: 20px;
+          cursor: pointer;
+        }
       }
     }
   }
-
 }

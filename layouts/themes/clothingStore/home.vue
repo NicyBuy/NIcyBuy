@@ -1,8 +1,8 @@
 <template>
 <div class="home">
   <cNav />
-  <div class="nav-space"></div>
 
+  <div class="nav-space"></div>
 
   <main class="clothingStore__main">
     <div class="contImg">
@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <div class="white-space"></div>
+    <div class="-white-space"></div>
 
     <div class="Categories">
       <div class="Title">CATEGORIAS</div>
@@ -29,7 +29,7 @@
       </div>
     </div>
 
-    <div class="white-space"></div>
+    <div class="-white-space"></div>
 
     <div class="Sizes">
       <div class="Title">Tallas</div>
@@ -42,11 +42,9 @@
       </div>
     </div>
 
-
     <contProducts />
-    
   </main>
-  <cFooter/>
+  <cFooter />
 </div>
 </template>
 
@@ -72,5 +70,6 @@ export default {
   }
 }
 </script>
+
 <style lang = "scss" src = "../../../scss/main.scss"></style>
 
