@@ -2,7 +2,7 @@
 <div class="home">
   <cNav />
 
-  <div class="nav-space"></div>
+  
 
   <main class="clothingStore__main">
     <div class="contImg">

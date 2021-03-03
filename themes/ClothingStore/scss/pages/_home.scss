@@ -7,10 +7,7 @@
   background: $clothingStoreBG;
 
   //agregar nav space al componente de nav de un solo
-  .nav-space {
-    @include nav-space();
-  }
-
+ 
   .contImg {
     @include ContImg(30vh, 100%);
     background: white;

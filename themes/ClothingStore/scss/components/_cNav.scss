@@ -1,44 +1,180 @@
-nav {
-  width: 100%;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: $clothingStore1;
-  position: fixed;
+.cNav {
+  overflow-x: hidden;
 
-  .contNav {
-    width: 90%;
-    height: 80%;
+  nav {
+    width: 100%;
+    max-width: 1920px;
+    min-width: 360px;
+    min-height: 8vh;
+
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    background: $clothingStore1;
+    position: fixed;
 
-    .contNav__logo {
-      width: 50px;
-      height: 50px;
-      border-radius: 100%;
-      background: white;
-      visibility: hidden;
-    }
-
-    .contNav__button {
-      width: 50px;
-      height: 40px;
-      border: none;
+    .contNav {
+      width: 90%;
+      height: 80%;
       display: flex;
-      flex-direction: column;
       justify-content: space-between;
+      align-items: center;
 
-      .contNav__button-line {
-        width: 100%;
-        height: 8px;
+      .contNav__logo {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
         background: white;
 
-        &:hover {
-          cursor: pointer;
+      }
+
+      .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 35%;
+
+        @media screen and(max-width: 1550px) {
+          width: 45%;
+        }
+
+        @media screen and(max-width: 1230px) {
+          width: 45%;
+        }
+
+        @media screen and(max-width: 990px) {
+          width: 55%;
+        }
+
+        @media screen and(max-width: 865px) {
+          transform: translateX(100%);
+          position: absolute;
+          right: 0px;
+          top: 6vh;
+          background: $clothingStore2;
+          height: 94vh;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+          width: 50%;
+          transition: 0.5s ease-in;
+
+          li {
+            opacity: 0;
+          }
+        }
+
+        li {
+          list-style: none;
+
+          &:hover {
+            transform: scale(1.03) translatey(-2px);
+            transition: all 0.3s;
+          }
+
+          a {
+            text-decoration: none;
+            color: white;
+            letter-spacing: 2px;
+            font-size: 18px;
+            font-weight: bold;
+
+            @media screen and(max-width: 1230px) {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+
+      .nav-active{
+        transform: translateX(0%);
+      }
+
+      @keyframes  navLinksFade {
+        from{
+          opacity: 0;
+          transform: translateX(50px);
+        }
+
+        to{
+          opacity: 1;
+          transform: translateX(0px);
+        }
+      }
+
+      .contNav__button {
+        width:40px;
+        height: 30px;
+        border: none;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        
+
+        @media screen and(max-width: 865px) {
+          display: flex;
+        }
+
+
+
+        .contNav__button-line1{
+          width: 100%;
+          height: 6px;
+          background: white;
+          transition: all 0.5s;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .contNav__button-line2{
+          width: 100%;
+          height: 6px;
+          background: white;
+          transition: all 0.5s;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+
+        .contNav__button-line3{
+          width: 100%;
+          height: 6px;
+          background: white;
+          transition: all 0.5s;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+
+      .burgerAnimation{
+        
+        .contNav__button-line1{
+          transform: rotate(-45deg) translate(-10px, 6px);
+         
+        }
+
+        .contNav__button-line2{
+          opacity: 0;
+        }
+
+        .contNav__button-line3{
+          transform: rotate(45deg) translate(-10px, -5px);
+          
         }
       }
     }
   }
 }
+
+.clothignStore__nav-space {
+  width: 100%;
+  max-width: 1920px;
+  height: 8vh;
+}
+
+
