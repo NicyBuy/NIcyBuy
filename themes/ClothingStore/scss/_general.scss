@@ -1,68 +1,97 @@
 @import 'libs/vars';
 
-    .clothingStore__contBanner {
-        @include ContImg(30vh, 100%);
-        background: white;
-    
-        img {
-          @include img();
-        }
+.clothingStore__contBanner {
+  @include ContImg(30vh, 100%);
+  background: white;
+
+  img {
+    @include img();
+  }
+}
+
+
+.clothingStore__BG {
+  width: 100%;
+  background: $clothingStore2;
+}
+
+.clothingStore__contH1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .clothingStore__h1 {
+    width: 90%;
+    color: white;
+    font-family: $clothingStore__font-family;
+    font-size: 30px;
+    margin: 0px;
+  }
+}
+
+.clothingStore__contH2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .clothingStore__h2 {
+    width: 90%;
+    color: white;
+    font-family: $clothingStore__font-family;
+    font-size: 25px;
+    margin: 0px;
+  }
+}
+
+.clothingStore__conTxt-normal {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
+  .clothingStore__txt {
+    width: 90%;
+    overflow: hidden;
+  }
+}
+
+
+//ABOUT US PAGE ============================
+.clothingStore__contImg {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+
+  img {
+    width: 300px;
+    height: 100%;
+    margin: 0px;
+  }
+}
+
+//CONTACT PAGE ======================================
+.contact__contSN {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .contact__SN {
+    width: 250px;
+    display: flex;
+    justify-content: space-evenly;
+
+    a {
+      svg {
+        width: 50px;
+        height: 50px;
+        fill: white;
       }
-      
-      
-      .clothingStore__BG{
-          width: 100%;
-          background: $clothingStore2;
-      }
+    }
+  }
 
-      .clothingStore__contH1{
-          width: 100%;
-          display: flex;
-          justify-content: center;
-          
-        .clothingStore__h1{
-            width: 90%;
-            color: white;
-            font-family: $clothingStore__font-family;
-            font-size: 30px;
-            margin: 0px;
-          }
-     
-      }
-     
-     
-
-     .clothingStore__conTxt-normal{
-         width: 100%;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         color: white;
-
-         .clothingStore__txt{
-             width: 90%;
-             overflow: hidden;
-         }
-       
-     }
-
-
-
-
-     //ABOUT US PAGE ============================
-
-     .clothingStore__contImg{
-         margin: 0px;
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       overflow: hidden;
-       width: 100%;
-       height: 200px;
-
-        img{
-            width: 300px;
-            height: 100%;
-            margin: 0px;
-        }
-      }
+}
