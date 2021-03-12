@@ -56,7 +56,7 @@
           </div>
 
           <div class="clothingStore__buying-Title">
-            Contactanos en Redes Sociales.
+            Contactanos en Redes Sociales
           </div>
         </div>
 

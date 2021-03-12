@@ -25,6 +25,12 @@
         height: 50px;
         border-radius: 100%;
         background: white;
+        visibility: visible;
+
+        @media screen and(max-width: 865px) {
+          visibility: hidden;
+        }
+
 
       }
 
@@ -54,7 +60,7 @@
           height: 94vh;
           display: flex;
           flex-direction: column;
-          justify-content: space-around;
+          justify-content: flex-start;
           align-items: center;
           width: 50%;
           transition: 0.5s ease-in;
@@ -66,6 +72,11 @@
 
         li {
           list-style: none;
+
+
+          @media screen and(max-width: 865px) {
+            margin-top: 80px;
+          }
 
           &:hover {
             transform: scale(1.03) translatey(-2px);
@@ -82,6 +93,11 @@
             @media screen and(max-width: 1230px) {
               font-size: 15px;
             }
+
+            @media screen and(max-width: 865px) {
+              margin-top: 20px;
+            }
+  
           }
         }
       }
@@ -154,16 +170,17 @@
       .burgerAnimation{
         
         .contNav__button-line1{
-          transform: rotate(-45deg) translate(-10px, 6px);
+          transform: rotate(-45deg) translate(-12px, 6px) rotate(1turn);
          
         }
 
         .contNav__button-line2{
           opacity: 0;
+          transform: rotate(1turn);
         }
 
         .contNav__button-line3{
-          transform: rotate(45deg) translate(-10px, -5px);
+          transform: rotate(45deg) translate(-9px, -5px) rotate(1turn);
           
         }
       }
