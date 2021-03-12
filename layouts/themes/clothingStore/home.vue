@@ -7,6 +7,11 @@
   <main class="clothingStore__main">
     <div class="contImg">
       <img :src="Banner" alt="">
+      <div class="contSlogan">
+        <div class="slogan">
+          LA MEJOR CALIDAD PARA TODA LA FAMILIA
+        </div>
+      </div>
     </div>
 
     <div class="Featured">

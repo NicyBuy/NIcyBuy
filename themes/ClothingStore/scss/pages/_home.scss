@@ -11,9 +11,75 @@
   .contImg {
     @include ContImg(30vh, 100%);
     background: white;
+    max-width: 1920px;
 
+    @media screen and (min-width: 463px) {
+      height: 35vh;
+    }
+
+    @media screen and (min-width: 570px) {
+      height: 40vh;
+    }
+
+    @media screen and (min-width: 700px) {
+      height: 50vh;
+    }
+
+    @media screen and(min-width: 865px) {
+      justify-content: flex-start;
+    }
+
+    @media screen and(min-width: 1600px) {
+      height: 60vh;
+    }
+   
     img {
       @include img();
+
+      @media screen and (min-width: 650px) {
+        width: 95%;
+        height: 95%;
+      }
+
+      @media screen and (min-width: 700px) {
+        width: 100%;
+        height: 100%;
+      }
+
+      @media screen and(min-width: 865px) {
+        width: 50%;
+        height: 100%;
+      }
+  
+    }
+
+    .contSlogan{
+      width: 50%;
+      height: 100%;
+      display: none;
+
+      
+
+      @media screen and(min-width: 865px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .slogan{
+        width: 70%;
+        height: 50%;
+        font-size: 30px;
+        font-weight: bold;
+
+        @media screen and(min-width: 1000px) {
+          font-size: 40px;
+        }
+      }
+
+
+
+      
     }
   }
 
@@ -48,10 +114,18 @@
     }
 
     .contCategories {
-      width: 93%;
+      width: 350px;
       display: flex;
       justify-content: space-between;
       flex-wrap: wrap;
+
+      @media screen and(min-width: 500px) {
+        width: 380px;
+      }
+
+      @media screen and(min-width: 600px) {
+        width: 85%;
+      }
 
       button {
         border: none;
