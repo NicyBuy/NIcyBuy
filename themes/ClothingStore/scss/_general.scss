@@ -4,6 +4,7 @@
   @include ContImg(30vh, 100%);
   background: white;
 
+  
   img {
     @include img();
   }
@@ -40,6 +41,10 @@
     font-family: $clothingStore__font-family;
     font-size: 25px;
     margin: 0px;
+
+    @media screen and(min-width: 1000px) {
+      font-size: 30px;
+    }
   }
 }
 
@@ -53,6 +58,10 @@
   .clothingStore__txt {
     width: 90%;
     overflow: hidden;
+
+    @media screen and(min-width: 1000px) {
+      font-size: 18px;
+    }
   }
 }
 
@@ -67,6 +76,10 @@
   width: 100%;
   height: 200px;
 
+  @media screen and(min-width: 1300px) {
+    width: 30%;
+  }
+
   img {
     width: 300px;
     height: 100%;
@@ -79,6 +92,10 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  
+  @media screen and(min-width: 1000px) {
+    margin-bottom: 30px;
+  }
 
   .contact__SN {
     width: 250px;

@@ -2,8 +2,6 @@
 <div class="productView">
   <c-nav />
 
-  <div class="nav-space"></div>
-
   <div class="productView__contImg">
     <img :src="product" alt="">
   </div>
@@ -23,9 +21,7 @@
 
       <div class="contPreview">
         <div class="preview"></div>
-        <div class="preview"></div>
-        <div class="preview"></div>
-        <div class="preview"></div>
+        
       </div>
 
       <div class="contPrice">
