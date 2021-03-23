@@ -73,14 +73,21 @@
         height: 30%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: flex-start;
+      
 
         .preview {
-          height: 75px;
-          width: 75px;
+          @include ContImg(75px, 75px);
           background: white;
+
+          img{
+            @include img();
+          }
         }
+        
       }
+
+      
 
       .contPrice {
         width: 90%;
@@ -121,3 +128,62 @@
     }
   }
 }
+
+.preview-off{
+  width: 100%;
+  height: 100vh;
+  display: none;
+  background: rgba(0, 0, 0, 0.726);
+  position: fixed;
+  z-index: 50;
+
+  .preview-off__contImg{
+    margin-top: 15px;
+    @include ContImg(500px, 100%);
+
+    @media screen and(min-width: 700px) {
+      height: 600px;
+     }
+
+    img{
+     width: 95%;
+     height: 90%;
+     object-fit: cover;
+
+     @media screen and(min-width: 500px) {
+      width: 95%;
+      height: 95%;
+     }
+
+     @media screen and(min-width: 700px) {
+      width: 85%;
+      height: 100%;
+     }
+    }
+  }
+
+  .cont-x{
+    margin-top: 20px;
+    width: 98%;
+    height: 35px;
+    display: flex;
+    justify-content: flex-end;
+    svg{
+      fill: white;
+      width: 35px;
+      height: 35px;
+
+
+
+      
+    }
+  }
+
+
+
+}
+
+.preview-on{
+  display: block;
+}
+
