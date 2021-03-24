@@ -74,20 +74,20 @@
         display: flex;
         align-items: center;
         justify-content: flex-start;
-      
+
 
         .preview {
           @include ContImg(75px, 75px);
           background: white;
 
-          img{
+          img {
             @include img();
           }
         }
-        
+
       }
 
-      
+
 
       .contPrice {
         width: 90%;
@@ -129,7 +129,7 @@
   }
 }
 
-.preview-off{
+.preview-off {
   width: 100%;
   height: 100vh;
   display: none;
@@ -137,53 +137,82 @@
   position: fixed;
   z-index: 50;
 
-  .preview-off__contImg{
-    margin-top: 15px;
-    @include ContImg(500px, 100%);
-
-    @media screen and(min-width: 700px) {
-      height: 600px;
-     }
-
-    img{
-     width: 95%;
-     height: 90%;
-     object-fit: cover;
-
-     @media screen and(min-width: 500px) {
-      width: 95%;
-      height: 95%;
-     }
-
-     @media screen and(min-width: 700px) {
-      width: 85%;
-      height: 100%;
-     }
-    }
-  }
-
-  .cont-x{
+  .cont-x {
     margin-top: 20px;
     width: 98%;
     height: 35px;
     display: flex;
     justify-content: flex-end;
-    svg{
+
+    svg {
       fill: white;
       width: 35px;
       height: 35px;
-
-
-
-      
     }
   }
 
+  .preview-off__contImg {
+    margin-top: 15px;
+    @include ContImg(500px, 100%);
+
+    @media screen and(min-width: 700px) {
+      height: 600px;
+    }
+
+    img {
+      width: 95%;
+      height: 90%;
+      object-fit: cover;
+
+      @media screen and(min-width: 500px) {
+        width: 95%;
+        height: 95%;
+      }
+
+      @media screen and(min-width: 700px) {
+        width: 85%;
+        height: 100%;
+      }
+    }
+  }
+
+  .preview-off__options{
+    width: 100%;
+    height: 85px;
+   
+    display: flex;
+    justify-content: center;
+
+    .preview-off__contOptions{
+      width: 360px;
+      height: 100%;
+     
+      display: flex;
+      justify-content: space-between;
+
+      .preview-off__option{
+        width: 85px;
+        height: 85px;
+        background: white;
+
+        img{
+          @include img();
+        }
+
+        &:hover{
+          border: solid $clothingStore1 5px;
+          transform: translateY(-3px);
+        }
+      }
+    }
+  }
+
+  
+
 
 
 }
 
-.preview-on{
+.preview-on {
   display: block;
 }
-
