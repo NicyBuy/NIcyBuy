@@ -7,6 +7,9 @@
 //THEMES //=============================
 
 //clothingStore //-----------------------
+//general
+@import "../themes/ClothingStore/scss/general";
+
 //libs
 @import "../themes/ClothingStore/scss/libs/mixins";
 @import "../themes/ClothingStore/scss/libs/vars";
@@ -14,6 +17,7 @@
 //pages
 @import "../themes/ClothingStore/scss/pages/home";
 @import "../themes/ClothingStore/scss/pages/productView";
+@import "../themes/ClothingStore/scss/pages/buyingPage";
 
 //components
 @import "../themes/ClothingStore/scss/components/cFooter";

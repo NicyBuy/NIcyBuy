@@ -1,5 +1,6 @@
 .foodStore__main {
   background: $foodStoreBG;
+  font-family: $foodStore__font-family;
 
   .foodStore__pV-contCover {
     width: 100%;
@@ -37,7 +38,6 @@
     border-radius: 25px 25px 0px 0px;
     transform: translateY(-15px);
 
-
     .foodStore__pV-title {
       width: 90%;
       font-size: $foodStore__Sub-title;
@@ -66,7 +66,13 @@
       }
     }
 
+    .foodStore__pV-price {
+      width: 80%;
+      display: flex;
+      justify-content: flex-end;
+      font-size: $foodStore__Title;
+      font-weight: bold;
+      color: $foodStore1;
+    }
   }
-
-
 }

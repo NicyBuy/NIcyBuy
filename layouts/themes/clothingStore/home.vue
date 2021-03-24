@@ -1,12 +1,17 @@
 <template>
 <div class="home">
   <cNav />
-  <div class="nav-space"></div>
 
+  
 
   <main class="clothingStore__main">
     <div class="contImg">
       <img :src="Banner" alt="">
+      <div class="contSlogan">
+        <div class="slogan">
+          LA MEJOR CALIDAD PARA TODA LA FAMILIA
+        </div>
+      </div>
     </div>
 
     <div class="Featured">
@@ -16,7 +21,7 @@
       </div>
     </div>
 
-    <div class="white-space"></div>
+    <div class="-white-space"></div>
 
     <div class="Categories">
       <div class="Title">CATEGORIAS</div>
@@ -29,7 +34,7 @@
       </div>
     </div>
 
-    <div class="white-space"></div>
+    <div class="-white-space"></div>
 
     <div class="Sizes">
       <div class="Title">Tallas</div>
@@ -42,19 +47,20 @@
       </div>
     </div>
 
-
     <contProducts />
-    
   </main>
-  <cFooter/>
+  <cFooter />
 </div>
 </template>
 
 <script>
+//components
 import cFooter from '../../../themes/ClothingStore/components/cFooter.vue';
 import cNav from '../../../themes/ClothingStore/components/cNav.vue';
 import cProduct from '../../../themes/ClothingStore/components/cProduct.vue';
 import contProducts from '../../../themes/ClothingStore/components/contProducts';
+
+//img
 import Banner from '../../../assets/Stores/ThriftyShop/img/Logo.jpeg';
 
 export default {
@@ -72,5 +78,6 @@ export default {
   }
 }
 </script>
+
 <style lang = "scss" src = "../../../scss/main.scss"></style>
 

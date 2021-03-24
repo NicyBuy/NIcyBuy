@@ -1,10 +1,35 @@
 <template>
-  <div class="cFooter">
-    <div class="clothingStore__Footer">
-      <div class="contLogo">Aqui ira el Logo</div>
+  <div class="clothingStore__contact">
+    <cNav />
 
-      <div class="contSN">
-        <div class="SN">
+    <div class="clothingStore__contBanner">
+      <img :src="img" alt="">
+    </div>
+
+    <div class="clothingStore__BG">
+
+      <div class="-white-space"></div>
+
+      <div class="clothingStore__contH2">
+        <h2 class="clothingStore__h2">CONTACTO</h2>
+      </div>
+
+      <div class="white-space"></div>
+
+      <div class="clothingStore__conTxt-normal">
+        <div class="clothingStore__txt">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est aperiam fugiat cum quo. Autem consequatur
+          possimus
+          nulla modi cum porro maxime eaque tempora esse quaerat eligendi voluptatum dolore provident, dicta doloribus
+          delectus totam officia aliquid laborum quasi deleniti quos impedit? Praesentium ut exercitationem quaerat,
+          sapiente totam placeat est asperiores ullam.
+        </div>
+      </div>
+
+      <div class="-white-space"></div>
+
+      <div class="contact__contSN">
+        <div class="contact__SN">
           <a class="messenger" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0"
@@ -44,16 +69,56 @@
         </div>
       </div>
 
-      <div class="tel">tel: (+503)<span>7854-3245</span></div>
+      <div class="--white-space"></div>
+
+      <div class="clothingStore__contH2">
+        <h2 class="clothingStore__h2">ENVIOS</h2>
+      </div>
+
+      <div class="white-space"></div>
+
+      <div class="clothingStore__conTxt-normal">
+        <div class="clothingStore__txt">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est aperiam fugiat cum quo. Autem consequatur
+          possimus
+          nulla modi cum porro maxime eaque tempora esse quaerat eligendi voluptatum dolore provident, dicta doloribus
+          delectus totam officia aliquid laborum quasi deleniti quos impedit? Praesentium ut exercitationem quaerat,
+          sapiente totam placeat est asperiores ullam.
+        </div>
+      </div>
+
+      <div class="-white-space"></div>
     </div>
+
+    <c-footer />
+
   </div>
 </template>
 
 <script>
-export default {
+//components
+import cNav from '../../../themes/ClothingStore/components/cNav.vue';
 
+//img
+import img from '../../../assets/Stores/ThriftyShop/img/Logo.jpeg';
+import Friends from '../../../assets/Stores/ThriftyShop/img/Friends.jpg'
+import CFooter from '../../../themes/ClothingStore/components/cFooter.vue';
+
+export default {
+  components: {
+    cNav,
+    img,
+    Friends,
+    CFooter
+  },
+
+  data() {
+    return {
+      img: img,
+      Friends: Friends
+    }
+  }
 }
 </script>
 
 <style lang = "scss" src = "../../../scss/main.scss"></style>
-

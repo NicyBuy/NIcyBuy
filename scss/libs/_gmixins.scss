@@ -1,14 +1,5 @@
 //MIXINS
-@mixin white-space($height) {
-  width: 100%;
-  height: $height;
-}
 
-//checkear todos los white space agregados.
-@mixin white-space {
-  width: 100%;
-  height: 30px;
-}
 
 @mixin ContImg($height, $width) {
   height: $height;
@@ -33,6 +24,11 @@
 
 
 //PLUGINS
+.white-space {
+  width: 100%;
+  height: 15px;
+}
+
 .-white-space {
   width: 100%;
   height: 30px;
@@ -41,4 +37,17 @@
 .--white-space {
   width: 100%;
   height: 50px;
+}
+
+
+.-divider {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  .line {
+    width: 90%;
+    height: 1.5px;
+    background: rgba(0, 0, 0, 0.192);
+  }
 }

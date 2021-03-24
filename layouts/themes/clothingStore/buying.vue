@@ -1,10 +1,73 @@
 <template>
-  <div class="cFooter">
-    <div class="clothingStore__Footer">
-      <div class="contLogo">Aqui ira el Logo</div>
+  <div class="clothingStore__buyingPage">
+    <cNav />
+    <div class="white-space"></div>
+    <div class="clothingStore__buying">
+      <div class="clothingStore__buyingCard">
+        <div class="clothingStore__buying-contTitle">
+          <div class="clothingStore__buying-number">
+            1
+          </div>
 
-      <div class="contSN">
-        <div class="SN">
+          <div class="clothingStore__buying-Title">
+            Copia el siguiente link:
+          </div>
+        </div>
+
+        <div class="clothingStore__buying-link">
+          <a href="#">https://koos.com/clothingStore/buying</a>
+          <button class="clothingStore__buying-link-copy" title="copy">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+              <path
+                d="M7 16h10v1h-10v-1zm0-1h10v-1h-10v1zm15-13v22h-20v-22h3c1.229 0 2.18-1.084 3-2h8c.82.916 1.771 2 3 2h3zm-11 1c0 .552.448 1 1 1s1-.448 1-1-.448-1-1-1-1 .448-1 1zm9 1h-4l-2 2h-3.898l-2.102-2h-4v18h16v-18zm-13 9h10v-1h-10v1zm0-2h10v-1h-10v1z" />
+              </svg>
+          </button>
+        </div>
+
+        <div class="clothingStore__buying-note">
+          O puedes tomar una captura de pantalla del producto de abajo
+        </div>
+      </div>
+      <div class="-white-space"></div>
+
+      <div class="clothingStore__buying-contProduct">
+        <h2>TU COMPRA:</h2>
+
+        <div class="clothingStore__buying-product">
+          <div class="contImg">
+            <img :src="Product" alt="">
+          </div>
+
+          <div class="name">
+            {{name}}
+          </div>
+
+          <div class="price">
+            ${{price}}
+          </div>
+        </div>
+      </div>
+
+      <div class="-white-space"></div>
+      <div class="clothingStore__buyingCard">
+        <div class="clothingStore__buying-contTitle">
+          <div class="clothingStore__buying-number">
+            2
+          </div>
+
+          <div class="clothingStore__buying-Title">
+            Contactanos en Redes Sociales
+          </div>
+        </div>
+
+        <div class="clothingStore__buying-note">
+          Contactanos  por cualquiera de nuestras Redes Sociales
+          y envianos el link que copiaste o la captura de pantalla
+          que hayas tomado. Sera un gusto atenderte!
+        </div>
+
+        <div class="clothingStore__buying-contSN ">
+        <div class="clothingStore__buying__SN ">
           <a class="messenger" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
               xmlns:svgjs="http://svgjs.com/svgjs" version="1.1" width="512" height="512" x="0" y="0"
@@ -12,10 +75,10 @@
               <g>
                 <path xmlns="http://www.w3.org/2000/svg"
                   d="m241.574219 210.210938-82.953125 87.828124 75.492187-41.421874 39.445313 41.421874 82.488281-87.828124-74.65625 40.695312zm0 0"
-                  fill="#ffffff" data-original="#000000" style="" class="" />
+                   data-original="#000000" style="" class="" />
                 <path xmlns="http://www.w3.org/2000/svg"
                   d="m256 0c-141.363281 0-256 114.636719-256 256s114.636719 256 256 256 256-114.636719 256-256-114.636719-256-256-256zm2 393.035156c-15.847656 0-31.144531-2.238281-45.535156-6.382812l-51.625 29.347656v-55.210938c-34.578125-26.3125-56.660156-66.386718-56.660156-111.269531 0-79.265625 68.867187-143.519531 153.820312-143.519531 84.957031 0 153.820312 64.253906 153.820312 143.519531 0 79.257813-68.863281 143.515625-153.820312 143.515625zm0 0"
-                  fill="#ffffff" data-original="#000000" style="" class="" />
+                   data-original="#000000" style="" class="" />
               </g>
             </svg>
           </a>
@@ -43,17 +106,37 @@
           </a>
         </div>
       </div>
-
-      <div class="tel">tel: (+503)<span>7854-3245</span></div>
+  
+      </div>
+      <div class="--white-space"></div>
     </div>
+    <cFooter/>
+
   </div>
 </template>
 
 <script>
-export default {
+//components
+import cNav from '../../../themes/ClothingStore/components/cNav.vue';
+import CFooter from '../../../themes/ClothingStore/components/cFooter.vue';
 
+//img
+import Product from '../../../assets/Stores/ThriftyShop/products/1.jpg'
+
+export default {
+  components: {
+    cNav,
+    CFooter
+  },
+
+  data() {
+    return {
+      name: "Nombre del producto talla S",
+      price: 10.99,
+      Product: Product,
+    }
+  }
 }
 </script>
 
 <style lang = "scss" src = "../../../scss/main.scss"></style>
-

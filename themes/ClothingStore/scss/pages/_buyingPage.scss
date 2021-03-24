@@ -1,0 +1,194 @@
+.clothingStore__buyingPage {
+  background: $clothingStoreBG;
+
+  .clothingStore__buying {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    .clothingStore__buyingCard {
+      width: 350px;
+      background: white;
+      border-radius: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @media screen and (min-width: 700px) {
+        width: 400px;
+      }
+
+      @media screen and (min-width: 865px) {
+        width: 450px;
+        align-self: flex-start;
+        margin-left: 30px;
+      }
+
+      @include Shadow();
+
+      .clothingStore__buying-contTitle {
+        display: flex;
+        align-items: center;
+        width: 93%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+      
+
+        .clothingStore__buying-number {
+          width: 40px;
+          height: 40px;
+          background: $clothingStore1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: 20px;
+          font-weight: bold;
+          border-radius: 100%;
+          margin-right: 10px;
+
+          @media screen and (min-width: 865px) {
+            width: 45px;
+            height: 45px;
+            font-size: 25px;
+            margin-right: 12px;
+          }
+        }
+
+        .clothingStore__buying-Title {
+          font-size: 18px;
+
+          @media screen and (min-width: 865px) {
+            font-size: 20px;
+          }
+        }
+      }
+
+      .clothingStore__buying-link {
+        width: 80%;
+        display: flex;
+        margin-bottom: 15px;
+        // flex-wrap: wrap;
+
+        a {
+          color: $clothingStore1;
+          font-size: 15px;
+          width: 85%;
+        }
+
+        .clothingStore__buying-link-copy {
+          width: 10%;
+          height: 20px;
+          background: none;
+          border: none;
+
+          svg {
+            fill: $clothingStore1;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .clothingStore__buying-note {
+        width: 80%;
+        font-size: 15px;
+        margin-bottom: 25px;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.644);
+
+        @media screen and (min-width: 865px) {
+          font-size: 16px;
+        }
+      }
+
+      .clothingStore__buying-contSN {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+      
+        .clothingStore__buying__SN {
+          width: 250px;
+          display: flex;
+          justify-content: space-evenly;
+      
+          a {
+            svg {
+              width: 50px;
+              height: 50px;
+              fill: $clothingStore1;
+            }
+          }
+        }
+      }
+
+
+    }
+
+    .clothingStore__buying-contProduct {
+      width: 350px;
+
+      @media screen and (min-width: 865px) {
+        align-self: flex-start;
+        margin-left: 30px;
+      }
+
+      .clothingStore__buying-product {
+        width: 160px;
+        height: 250px;
+        margin: 10px 7px;
+        background: white;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include Shadow();
+
+        @media screen and (min-width: 865px) {
+          width: 180px;
+          height: 300px;
+          font-size: 25px;
+          margin-right: 12px;
+        }
+
+        .contImg {
+          @include ContImg(60%, 100%);
+
+          img {
+            @include img();
+          }
+        }
+
+        .name {
+          width: 97%;
+          height: 17%;
+          overflow: hidden;
+          margin-top: 3px;
+          display: flex;
+          font-size: 15px;
+
+          @media screen and (min-width: 865px) {
+            font-size: 18px;
+          }
+        }
+
+        .price {
+          width: 100%;
+          height: 20%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          padding-right: 7px;
+          font-size: 18px;
+          font-weight: 700;
+          color: $clothingStore3;
+
+          @media screen and (min-width: 865px) {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
