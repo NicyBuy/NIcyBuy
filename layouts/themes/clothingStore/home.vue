@@ -2,8 +2,6 @@
 <div class="home">
   <cNav />
 
-  
-
   <main class="clothingStore__main">
     <div class="contImg">
       <img :src="Banner" alt="">
@@ -15,7 +13,11 @@
     </div>
 
     <div class="Featured">
-      <div class="Title">LO MAS NUEVO</div>
+      <div class="Title">
+        <nuxt-link class="link-pagina" to="/stores/clothingStore/product">
+      LO MAS NUEVO
+      </nuxt-link>
+        </div>
 
       <div class="contFeatured">
       </div>
@@ -54,6 +56,8 @@
 </template>
 
 <script>
+import { mapState, mapMutations, mapActions } from "vuex";
+
 //components
 import cFooter from '../../../themes/ClothingStore/components/cFooter.vue';
 import cNav from '../../../themes/ClothingStore/components/cNav.vue';
@@ -75,7 +79,18 @@ export default {
     return {
       Banner: Banner,
     }
-  }
+  },
+  computed: {
+    ...mapState({
+      allproductsStore: (state) => state.stores.products,
+      fewProds: (state) => state.stores.fewProds,
+    }),
+  },
+  methods: {
+    ...mapMutations({
+      seeMore: "stores/moreProds",
+    }),
+  },
 }
 </script>
 

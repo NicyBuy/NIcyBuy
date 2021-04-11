@@ -3,7 +3,7 @@
     <cNav />
 
     <div class="clothingStore__contBanner">
-      <img :src="img" alt="">
+      <img :src="img100" alt="">
     </div>
 
     <div class="clothingStore__BG">
@@ -100,21 +100,21 @@
 import cNav from '../../../themes/ClothingStore/components/cNav.vue';
 
 //img
-import img from '../../../assets/Stores/ThriftyShop/img/Logo.jpeg';
+import img100 from '../../../assets/Stores/ThriftyShop/img/Logo.jpeg';
 import Friends from '../../../assets/Stores/ThriftyShop/img/Friends.jpg'
 import CFooter from '../../../themes/ClothingStore/components/cFooter.vue';
 
 export default {
   components: {
     cNav,
-    img,
+    img100,
     Friends,
     CFooter
   },
 
   data() {
     return {
-      img: img,
+      img100,
       Friends: Friends
     }
   }

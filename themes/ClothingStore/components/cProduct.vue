@@ -2,7 +2,7 @@
   <div class="cProduct">
     <div class="clothingStore__Product">
       <div class="contImg">
-        <img :src="img" alt="">
+        <img :src="img100" alt="">
       </div>
 
       <div class="name">
@@ -19,7 +19,7 @@
 <script>
 export default {
     props: {
-        img: String,
+        img100: String,
         name: String,
         price: Number,
     }

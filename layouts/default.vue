@@ -2,6 +2,7 @@
   <div>
     <navbar/>
     <Nuxt />
+    <h1>that's lame</h1>
     <thefooter/>
   </div>
 </template>

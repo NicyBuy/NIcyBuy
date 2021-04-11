@@ -21,7 +21,11 @@
       </svg>
     </div>
 
-    <div class="index_slider">slider</div>
+    <div class="index_slider">slider
+      <nuxt-link class="link-pagina" to="/stores/clothingStore">
+      clothing store
+      </nuxt-link>
+    </div>
 
     <div style="height: 100px; overflow: hidden; width: 100%">
       <svg
@@ -65,7 +69,7 @@ import { mapState, mapMutations } from "vuex";
 
 export default {
 
-  layout: "themes/clothingStore/productView",
+  //layout: "themes/clothingStore/productView",
 
   components: { ContProductos },
   data() {
