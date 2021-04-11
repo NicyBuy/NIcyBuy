@@ -27,7 +27,6 @@ export const mutations = {
         console.log('no hay mas por mostrar desde adentro');
       }
     }
-
   },
   moreProds(state) {
     let limit = state.index_parcial_products;
