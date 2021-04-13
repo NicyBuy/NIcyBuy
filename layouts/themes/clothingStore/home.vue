@@ -25,30 +25,6 @@
 
     <div class="-white-space"></div>
 
-    <div class="Categories">
-      <div class="Title">CATEGORIAS</div>
-
-      <div class="contCategories">
-        <button>Categoria</button>
-        <button>Categoria</button>
-        <button>Categoria</button>
-        <button>Categoria</button>
-      </div>
-    </div>
-
-    <div class="-white-space"></div>
-
-    <div class="Sizes">
-      <div class="Title">Tallas</div>
-
-      <div class="contSizes">
-        <button>S</button>
-        <button>M</button>
-        <button>L</button>
-        <button>XL</button>
-      </div>
-    </div>
-
     <contProducts />
   </main>
   <cFooter />

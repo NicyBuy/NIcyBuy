@@ -1,6 +1,29 @@
 <template>
   <div class="contProducts">
-    <div @click="filter1" >Filter price menor 20</div>
+     <div class="Categories">
+      <div class="Title">CATEGORIAS</div>
+
+      <div class="contCategories">
+        <button>Categoria</button>
+        <button>Categoria</button>
+        <button @click="filter1">Menos de 20 Pesitos</button>
+        <button>Categoria</button>
+      </div>
+    </div>
+
+    <div class="-white-space"></div>
+
+    <div class="Sizes">
+      <div class="Title">Tallas</div>
+
+      <div class="contSizes">
+        <button>S</button>
+        <button>M</button>
+        <button>L</button>
+        <button>XL</button>
+      </div>
+    </div>
+    
     <div class="Products">
       <!-- <cProduct :img="img1" name="Traje amarillo y azul para mujer" :price ="precio"  /> -->
        <cProduct
