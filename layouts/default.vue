@@ -2,7 +2,7 @@
   <div>
     <navbar/>
     <Nuxt />
-    <h1>that's lame</h1>
+  
     <thefooter/>
   </div>
 </template>
@@ -17,7 +17,6 @@ export default {
     
   }
 }
-    Navbar
 </script>
 <style lang="scss" src="../scss/main.scss">
   

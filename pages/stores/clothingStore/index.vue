@@ -9,8 +9,6 @@
 export default {
 
   layout: "themes/clothingStore/home",
-
-  
 };
 </script>
 
