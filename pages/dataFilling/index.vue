@@ -1,18 +1,93 @@
 <template>
 <div class="dataFilling__Home">
 <cNav/>
-<h1>Hola</h1>
+  <div class="dataFilling__main">
+    <div class="dataFilling__logo">
+      <img :src="Logo" alt="">
+    </div>
+
+    <div class="dataFilling__search">
+      <input type="text" class="dataFilling__search-bar" placeholder="Buscar" name="dataFillingSearch" id="dataFillingSearch">
+    </div>
+
+    <div class="dataFilling__categories">
+      <h2>Categories</h2>
+      <div class="dataFilling__cont-categories">
+        <button class="dataFilling__categories-category">
+          Category
+        </button>
+
+        <button class="dataFilling__categories-category">
+          Category
+        </button>
+
+        <button class="dataFilling__categories-category">
+          Category
+        </button>
+
+        <button class="dataFilling__categories-category">
+          Category
+        </button>
+        
+      </div>
+
+    </div>
+    <div class="dataFilling__stores">
+      <button class="dataFilling__store">
+        Tienda de Ropa
+      </button>
+      <button class="dataFilling__store">
+        Tienda de Ropa
+      </button>
+      <button class="dataFilling__store">
+        Tienda de Ropa
+      </button>
+      <button class="dataFilling__store">
+        Tienda de Ropa
+      </button>
+      <button class="dataFilling__store">
+        Tienda de Ropa
+      </button>
+      <button class="dataFilling__store">
+        Tienda de Ropa
+      </button>
+      <button class="dataFilling__store">
+        Tienda de Ropa
+      </button>
+      <button class="dataFilling__store">
+        Tienda de Ropa
+      </button>
+      <button class="dataFilling__store">
+        Tienda de Ropa
+      </button>
+      <button class="dataFilling__store">
+        Tienda de Ropa
+      </button>
+      
+    </div>
+  </div>
 </div>
 
 </template>
 
 <script>
+//componets
 import cNav from "../../components/dataFilling/cNav.vue";
+
+//img
+import Logo from "../../assets/dataFillingAssets/koos PNG.png"
 export default {
  layout: "dataFillingLayout",
 
 components: {
   cNav,
+},
+
+data(){
+  return {
+    Logo,
+  }
+
 }
 }
 </script>

@@ -1,0 +1,93 @@
+.dataFilling__main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    
+    .dataFilling__logo{
+        margin-top: 100px;
+        
+        
+        img{
+           width: 200px;
+        }
+    }
+
+    .dataFilling__search{
+
+        .dataFilling__search-bar{
+            border-radius: 100px;
+            width: 500px;
+            height: 50px;
+            padding-left: 15px;
+            border: solid rgba(128, 128, 128, 0.603) 2px;
+            font-size: 23px;
+            font-family: sans-serif;
+            outline: none;
+            transition: all 0.3s;
+
+            &:focus{
+                border: solid rgba(0, 0, 0, 0.671) 2px;
+                font-size: 18px;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    .dataFilling__categories{
+        width: 700px;
+        
+        
+        margin-top: 70px;
+
+        .dataFilling__cont-categories{
+            
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+            .dataFilling__categories-category{
+                padding: 12px;
+                font-size: 18px;
+                border: solid black 1px;
+                background: none;
+                cursor: pointer;
+                margin: 10px;
+                transition: all 0.2s;
+                border-radius: 6%;
+
+                &:hover{
+                    color: white;
+                    background: black;
+                }
+            }
+        }
+    }
+
+    .dataFilling__stores{
+        width: 85%;
+        
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+
+        .dataFilling__store{
+            padding: 50px;
+            font-size: 18px;
+            background-color: white;
+            border: none;
+            color: rgba(0, 0, 0, 0.445);
+            border-radius: 9px;
+            border: solid rgba(0, 0, 0, 0.445) 1.5px;
+            cursor: pointer;
+            margin: 13px;
+            transition: all 0.3s;
+
+            &:hover{
+                border: solid black 1.5px;
+                color: black;
+            }
+        }
+    }
+}
