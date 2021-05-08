@@ -56,7 +56,7 @@ export default {
             username: this.email,
             password: this.password,
         },
-        headers: {  'Content-Type': 'application/json', 
+        headers: {  
                     'Access-Control-Allow-Origin': 'https://koosapp.herokuapp.com'},
     }).then(res => {
         console.log(res.data);
