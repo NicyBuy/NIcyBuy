@@ -1,0 +1,55 @@
+.dataFilling__addStore-main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    padding-left: 30px;
+    padding-right: 20px;
+    .dataFilling__addStore-name{
+        width: 1200px;
+        height: 60px;
+        font-size: 50px;
+        font-family: sans-serif;
+        font-weight: 700;
+        border: none;
+        background-color: none;
+        outline: none;
+        padding-right: 0px;
+        
+
+        &:focus{
+           border-bottom: solid black 3px;
+        }
+    }
+
+    span{
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .dataFilling__addStore-owner{
+        margin-top: 10PX;
+        margin-bottom: 100px;
+        margin-left: 20px;
+        
+        .dataFilling__addStore-owner-input{
+            font-size: 25px;
+            border: none;
+            background: none;
+            outline: none;
+            font-family: sans-serif;
+        }
+
+    }
+
+    .dataFilling__addStore-trigger1{
+        align-self: flex-start;
+        font-size: 30px;
+        font-weight: 700;
+        font-family: sans-serif;
+        border: none;
+        background: none;
+        margin: 10px;
+        cursor: pointer;
+        
+    }
+}
