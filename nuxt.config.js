@@ -33,6 +33,9 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/axios',
+    /*devServer:{
+      proxy:'https://apikoos.herokuapp.com/'
+    },*/
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

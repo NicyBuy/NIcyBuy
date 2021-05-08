@@ -1,0 +1,48 @@
+.login_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login_textfield{
+    border-style: solid;
+    height: 30px;
+    width: 250px;
+    border-radius: 5px;
+}
+
+.login_submitButton{
+    margin-top: 30px;
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #25D958;
+    line-height: 30px;
+}
+
+.login_registerText{
+    margin-top: 40px;
+    font-size: 13px;
+    color: gray;
+}
+
+.login_registerButton{
+    font-size: 15px;
+    color: blue;
+    text-decoration: underline;
+}
+
+$color1:#EBE5DA;
+$color2:#022E40;
+$color3:#227373;
+$color4:#D93B3B;
+$color5:#F27A5E;
+$color6:#4CA61C;
+$color7:#25D958;
+$color8:#0A8C2F;
+$color9:#3BD967;
+$color10:#B8B3AB;
+$color11:#011E29;
