@@ -1,4 +1,6 @@
 import axios from 'axios';
+import config from '@nuxtjs/axios';
+
 export const state = () => ({
   products: [],
   fewProds: [],
@@ -69,20 +71,37 @@ export const actions = {
   async getTokenResponse({
     commit
   }, payload) {
-    const res = await fetch('https://apikoos.herokuapp.com/api/signin', {
+    console.log(payload.email);
+    console.log(payload.password);
+    await axios({
       method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Access-Control-Allow-Origin': 'http://localhost:3000'
-      },
-      //mode:'no-cors',
-      body: JSON.stringify({
+      url:   'https://apikoos.herokuapp.com/api/signin',
+      data: {
         username: payload.email,
-        password: payload.password
-      })
-    })
-    const resDB = await res
-    console.log(resDB)
+        password: payload.password,
+      },
+      headers: {
+        'Access-Control-Allow-Origin': 'https://koosapp.herokuapp.com'
+      },
+
+      withCredentials: 'include'
+    }).then(res => {
+      console.log(res.data);
+      console.log(res.data.token);
+      console.log(res.data.valid);
+      localStorage.setItem('tokensito', res.data.token);
+      if (res.data.valid == false) {
+        alert('datos no validos parce');
+        localStorage.clear();
+        //username.value = "";
+        //contra.value = "";
+      } else {
+        localStorage.setItem('tokensito', res.data.token);
+        //window.location.href = '/newprod';
+        console.log('inicio de sesion correctamente')
+      }
+    }).
+    catch(err => console.log(err));
   },
   async getStoreProducts({
     commit

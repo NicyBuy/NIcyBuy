@@ -3,12 +3,12 @@
     <h1 class="login_title">Log it</h1>
 
     <h3 class="login_subtitle">Email</h3>
-    <input class="login_textfield" type="text" required v-model="email" />
+    <input class="login_textfield" type="text" required v-model="usuario.email" />
 
     <h3 class="login_subtitle">Password</h3>
-    <input class="login_textfield" type="text" required v-model="password" />
+    <input class="login_textfield" type="text" required v-model="usuario.password" />
 
-    <button @click="checkLogin" class="login_submitButton">Submit</button>
+    <button @click="getToken(usuario)" class="login_submitButton">Submit</button>
 
     <h3 class="login_registerText">
       Don't you have an account? Register for free asshole
@@ -29,8 +29,11 @@ export default {
 
   data() {
     return {
-      email: "",
+      usuario:{
+        email: "",
       password: "",
+      },
+      
       token:""
     };
   },
@@ -45,19 +48,20 @@ export default {
 
     async checkLogin(){
         console.log('wenas wenas como estamos');
-    console.log(this.email);
-    console.log(this.password);
-    console.log(typeof(Number(this.password) ));
+    console.log(this.usuario.email);
+    console.log(this.usuario.password);
+    console.log(typeof(Number(this.usuario.password) ));
 
-     await axios({
+    await axios({
         method: 'POST',
         url: 'https://apikoos.herokuapp.com/api/signin',
         data: {
-            username: this.email,
-            password: this.password,
+            username: this.usuario.email,
+            password: this.usuario.password,
         },
-        headers: {  
-                    'Access-Control-Allow-Origin': 'https://koosapp.herokuapp.com'},
+        headers: {'Access-Control-Allow-Origin': 'http://localhost:3000'},
+        
+        //withCredentials:'include'
     }).then(res => {
         console.log(res.data);
         console.log(res.data.token);
@@ -82,16 +86,16 @@ export default {
         headers:{'Content-Type': 'application/json',
                   'Access-Control-Allow-Origin': 'http://localhost:3000'
                 },
-        //mode:'no-cors',
-        body: JSON.stringify( {
+        mode:'cors',
+        body:  JSON.stringify({
             username: this.email,
             password: this.password
         })
     })
     const resDB =  await res
-    console.log(resDB.data)
-    //await this.$router.push('/')*/
-
+    console.log(resDB)
+    //await this.$router.push('/')
+    */
     }
   },
   mounted(){
