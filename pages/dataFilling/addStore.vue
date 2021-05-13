@@ -1,5 +1,10 @@
 <template>
   <div class="dataFilling__addStore">
+    <div  :class="ShowAgregar" class="dataFilling__addStore-contAddProduct">
+      <div  class="dataFilling__addStore-addProduct">
+        <button @click="display2 =! display2" class="dataFilling__addProduct-exit">x</button>
+      </div>
+    </div>
     <cNav />
     <!-- Main Container -->
     <div class="dataFilling__addStore-main">
@@ -12,10 +17,12 @@
           name="addStoreOwner" id="addStoreOwner">
       </div>
 
-      <button @click="display =! display" class="dataFilling__addStore-trigger1">Productos</button>
+      <button @click="display1 =! display1" class="dataFilling__addStore-trigger1">Productos</button>
 
-      <div :class="Show" class="dataFilling__addStore-contTrigger2">
-        <button class="dataFilling__addStore-trigger2">Agregar</button>
+      <div :class="ShowProductos" class="dataFilling__addStore-contTrigger2">
+        <button class="dataFilling__addStore-trigger2" @click="display2 = ! display2">Agregar</button>
+
+
 
         <button class="dataFilling__addStore-trigger2">Editar</button>
       </div>
@@ -23,7 +30,11 @@
       <button class="dataFilling__addStore-trigger1">Informacion</button>
 
       <button class="dataFilling__addStore-trigger1">Contacto</button>
+
+
     </div>
+
+
   </div>
 
 </template>
@@ -47,14 +58,22 @@ data(){
     Logo,
 
     //vars
-    display: false,
+    display1: false,
+    display2: false,
+    
   }
 },
 
 computed: {
-  Show(){
+  ShowProductos(){
     return{
-      display: this.display
+      display1: this.display1
+    }
+  },
+
+  ShowAgregar(){
+    return{
+      display2: this.display2
     }
   }
 }
