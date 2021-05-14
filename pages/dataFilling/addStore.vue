@@ -1,8 +1,22 @@
 <template>
   <div class="dataFilling__addStore">
-    <div  :class="ShowAgregar" class="dataFilling__addStore-contAddProduct">
-      <div  class="dataFilling__addStore-addProduct">
-        <button @click="display2 =! display2" class="dataFilling__addProduct-exit">x</button>
+    <div :class="ShowAgregar" class="dataFilling__addStore-contAddProduct">
+      <div class="dataFilling__addStore-addProduct">
+        <button @click="display2 =! display2">x</button>
+
+        <div class="dataFilling__addProduct-main">
+          <input type="text" class="dataFilling__addProduct-title" name="addProductTitle" id="addProductTitle" maxlength="77"
+              placeholder="Titulo">
+          <div class="dataFilling__addProduct-main-data">
+            <textarea name="addProductDescription" id="addProductDescription" cols="30" rows="10" maxlength="1200"
+              placeholder="Descripcion"></textarea>
+
+              <div class="dataFilling__addProduct-contImageUpload">
+                <label for="addProductImage1">Imagen Principal</label>
+                <input class="dataFilling__addProduct-ImageUpload1"  type="file" name="addProductImage1" id="addProductImage1">
+              </div>
+          </div>
+        </div>
       </div>
     </div>
     <cNav />
@@ -22,21 +36,14 @@
       <div :class="ShowProductos" class="dataFilling__addStore-contTrigger2">
         <button class="dataFilling__addStore-trigger2" @click="display2 = ! display2">Agregar</button>
 
-
-
         <button class="dataFilling__addStore-trigger2">Editar</button>
       </div>
 
       <button class="dataFilling__addStore-trigger1">Informacion</button>
 
       <button class="dataFilling__addStore-trigger1">Contacto</button>
-
-
     </div>
-
-
   </div>
-
 </template>
 
 <script>
