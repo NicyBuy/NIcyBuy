@@ -3,7 +3,7 @@
     <!-- Add Product Container ---------------------------------------------- -->
     <div :class="ShowAgregar" class="dataFilling__addStore-contAddProduct">
       <div class="dataFilling__addStore-addProduct">
-        <button @click="display2 =! display2">x</button>
+        <button @click="display2 =! display2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849z"/></svg></button>
 
         <div class="dataFilling__addProduct-main">
           <input type="text" class="dataFilling__addProduct-title" name="addProductTitle" id="addProductTitle"
@@ -25,7 +25,7 @@
           value="aceptar">
       </div>
     </div>
-    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+    <!-- -----------------------z-------------------------------------------------------------------------------------------------- -->
 
 
 
@@ -70,12 +70,49 @@
       <button @click="display5 =! display5" class="dataFilling__addStore-trigger1">Contacto</button>
 
       <div :class="ShowContacto" class="dataFilling__addStore-contContacto">
-        <h2>Contacto</h2>
+
+        <div class="dataFilling__addStore-contContactoEnvios">
+          <h2>Informacion de Contacto</h2>
+          <textarea name="dataFillingQueSomos" id="dataFillingQueSomos" cols="30" rows="10"></textarea>
+          <h2>Informacion de Envios</h2>
+          <textarea name="dataFillingQueSomos" id="dataFillingQueSomos" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="dataFilling__addStore-contRS">
+          <h2>Redes Sociales</h2>
+          <label for="facebook">Facebook</label>
+          <br>
+          <input type="text" name="facebook" id="facebook">
+          <br>
+          <label for="messenger">Messenger</label>
+          <br>
+          <input type="text" name="messenger" id="messenger">
+          <br>
+          <label for="instagram">Instagram</label>
+          <br>
+          <input type="text" name="instagram" id="instagram">
+          <br>
+          <label for="whatsapp">Whatsapp</label>
+          <br>
+          <input type="text" name="whatsapp" id="watsapp">
+        </div>
+
       </div>
       <!-- ------------------------------------------------------------------------------------------------- -->
     </div>
-  </div>
-</template>
+    <nuxt-link to="../../dataFilling" class="dataFilling__addStore-done"><svg xmlns="http://www.w3.org/2000/svg"
+        width="24" height="24" viewBox="0 0 24 24">
+        <path
+          d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-1.25 16.518l-4.5-4.319 1.396-1.435 3.078 2.937 6.105-6.218 1.421 1.409-7.5 7.626z" />
+      </svg></nuxt-link>
+
+    <nuxt-link to="../../dataFilling" class="dataFilling__addStore-exit"><svg xmlns="http://www.w3.org/2000/svg"
+        width="24" height="24" viewBox="0 0 24 24">
+        <path
+          d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.151 17.943l-4.143-4.102-4.117 4.159-1.833-1.833 4.104-4.157-4.162-4.119 1.833-1.833 4.155 4.102 4.106-4.16 1.849 1.849-4.1 4.141 4.157 4.104-1.849 1.849z" />
+        </svg></nuxt-link>
+    </div>
+    </template>
 
 <script>
 //componets
