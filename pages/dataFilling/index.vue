@@ -1,6 +1,11 @@
 <template>
 <div class="dataFilling__Home">
+  <!-- <div :class="ShowPopAddStore" class="dataFIlling__contPopAddStore">
+  <div class="dataFIlling__popAddStore"></div>
+</div> -->
+
 <cNav/>
+
   <div class="dataFilling__main">
     <div class="dataFilling__logo">
       <img :src="Logo" alt="">
@@ -86,10 +91,19 @@ components: {
 data(){
   return {
     Logo,
+    displayPopAddStore: false
   }
+},
 
+computed: {
+  ShowPopAddStore(){
+    return{
+      displayPopAddStore: this.displayPopAddStore
+    }
+  }
 }
 }
+
 </script>
 
 
