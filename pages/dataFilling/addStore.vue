@@ -43,6 +43,7 @@
           name="addStoreOwner" id="addStoreOwner">
       </div>
 
+
       <!-- Productos----------------------------------------------------------------------------- -->
       <button @click="display1 =! display1" class="dataFilling__addStore-trigger1">Productos</button>
 
