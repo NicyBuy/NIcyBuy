@@ -34,15 +34,27 @@
     <div class="dataFilling__addStore-main">
 
       <!-- Name of the Store -->
-      <input type="tel" class="dataFilling__addStore-name" placeholder="Nombre de la Tienda" name="addStoreName"
-        id="addStoreName">
+      <div class="dataFilling__addStore-contName">
+        <div @click="displayName = true" :class="hideName"  class="dataFilling__addStore-name">
+          Nombre de la Tienda
+        </div>
 
+        <div @click="displayName = false" :class="showExitName" class="dataFilling__addStore-exit-name"></div>
+
+         <input type="tel" class="dataFilling__addStore-input-name" placeholder="Nombre de la Tienda" name="addStoreName"
+        id="addStoreName">
+      </div>
+     
       <!-- Name of the owner of the Store -->
       <div class="dataFilling__addStore-owner">
         <span>De:</span> <input type="text" class="dataFilling__addStore-owner-input" placeholder="Propietario"
           name="addStoreOwner" id="addStoreOwner">
       </div>
 
+      <div class="dataFilling__addStore-email">
+        <span>Correo:</span> <input type="text" class="dataFilling__addStore-email-input" 
+          name="addStoreEmail" id="addStoreEmail">
+      </div>
 
       <!-- Productos----------------------------------------------------------------------------- -->
       <button @click="display1 =! display1" class="dataFilling__addStore-trigger1">Productos</button>
@@ -139,6 +151,10 @@ data(){
     display3: false,
     display4: false,
     display5: false,
+
+    //name
+    displayName: false,
+    displayExitName: true,
     
   }
 },
@@ -172,7 +188,22 @@ computed: {
     return{
       display5: this.display5
     }
+  },
+
+  hideName(){
+    return{
+      displayName: this.displayName,
+      
+    } 
+  },
+
+  showExitName(){
+    if(this.displayName == true){
+    return{
+      displayExitName: this.displayExitName
+    }
   }
+},
 }
 }
 </script>
