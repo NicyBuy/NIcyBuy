@@ -33,18 +33,19 @@
     <!-- Main Container -->
     <div class="dataFilling__addStore-main">
 
-      <!-- Name of the Store -->
+      <!-- Name of the Store ----------------------->
       <div class="dataFilling__addStore-contName">
         <div @click="displayName = true" :class="hideName"  class="dataFilling__addStore-name">
-          Nombre de la Tienda
+          {{addStoreName}}
         </div>
 
-        <div @click="displayName = false" :class="showExitName" class="dataFilling__addStore-exit-name"></div>
+        <div @click="displayName = false"  :class="showExitName" class="dataFilling__addStore-exit-name"></div>
 
-         <input type="tel" class="dataFilling__addStore-input-name" placeholder="Nombre de la Tienda" name="addStoreName"
+         <input type="tel" @submit.prevent ="displayName = false" class="dataFilling__addStore-input-name" v-model="addStoreName" placeholder="Nombre de la Tienda" name="addStoreName"
         id="addStoreName">
       </div>
-     
+     <!-- ------------------------------------------- -->
+
       <!-- Name of the owner of the Store -->
       <div class="dataFilling__addStore-owner">
         <span>De:</span> <input type="text" class="dataFilling__addStore-owner-input" placeholder="Propietario"
@@ -144,7 +145,6 @@ data(){
   return {
     //img
     Logo,
-
     //vars
     display1: false,
     display2: false,
